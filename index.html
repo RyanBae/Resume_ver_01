@@ -65,12 +65,40 @@ https://templatemo.com/tm-536-dream-pulse
       .font-size-10{
         font-size:10px;
       }
-      .width-15{
-        width: 17%;
-      }
+
       .width-15 > .mb-0{
         line-height: 120%;
       }
+      
+      
+      @media (max-width: 554px){
+        .tm-section {
+          padding: 0px 0px !important;
+        }
+        .width-15{
+          width: 100%;
+        }
+        .mulit-direction{
+          flex-direction: column;
+        }
+        .font-size-10{
+          margin-bottom: 0px;
+          margin-top: auto;
+        }
+
+      }
+      @media (min-width: 555px){
+        .tm-section {
+          padding: 0px 60px !important;
+        }
+        .width-15{
+          width: 17%;
+        }
+        .mulit-direction{
+          flex-direction: row;
+        }
+      }
+
 
     </style>
   </head>
@@ -91,7 +119,7 @@ https://templatemo.com/tm-536-dream-pulse
                 <!-- </div> -->
               </div>
 
-              <ul id="tmMainNav" class="nav flex-column text-uppercase text-right tm-main-nav">
+              <ul id="tmMainNav" class="nav flex-column text-uppercase text-right tm-main-nav" style="margin-bottom: 40% !important;">
                 <li class="nav-item">
                   <a href="#intro" class="nav-link active">
                     <span class="d-inline-block mr-3">Intro</span>
@@ -129,7 +157,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </a>
                 </li> -->
               </ul>
-              <ul class="nav flex-row tm-social-links">
+              <!-- <ul class="nav flex-row tm-social-links">
                 <li class="nav-item">
                   <a href="https://facebook.com" class="nav-link tm-social-link">
                     <i class="fab fa-facebook-f"></i>
@@ -150,7 +178,7 @@ https://templatemo.com/tm-536-dream-pulse
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
               <footer class="text-center text-white small">
                 <p class="mb--0 mb-2">Copyright 2021 RyanBae</p>
                 <!-- <p class="mb-0">Design: -->
@@ -263,21 +291,21 @@ https://templatemo.com/tm-536-dream-pulse
             </section>
           </div>
           <div class="tm-section-wrap bg-white">
-            <section id="work" class="row tm-section" style="display: flex; flex-direction: column; padding: 0px 60px !important;">
+            <section id="work" class="row tm-section" style="display: flex; flex-direction: column;">
               <div class="tm-section-half" style="width: 100%; padding: 50px !important;">
                 <div>
                   <!-- <i class="fas fa-6x fa-balance-scale mb-5 tm-section-icon"></i> -->
                   <h2 class="tm-section-title tm-color-primary mb-5">Work Experience.</h2>                      
                 </div>
                 <div class="mb-25">
-                  <div class="dis-flex border-bottom-solid">
+                  <div class="dis-flex mulit-direction border-bottom-solid">
                     <h4>트리플렛 </h4> 
                     <p class="mb-l-10" style="margin-right:0px; margin-left:auto;">2019.06 ~ 2021.10(2년5개월)</p>
                   </div>
-                  <p class="">IoT 기술로 일상생활에서 화재감시 등등(간략한 회사 소개)</p>
+                  <p class="">AI 기술과 IoT 기술을 기반으로 화재감지, 무인매장, 픽업 자동화, 스마트 팩토리 등의 영역에서 다앙한 솔루션 제작</p>
                   
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">PickupBar App</p>
                         <p class="font-size-10">2021.07~2021.10(4개월)</p>  
@@ -288,7 +316,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p>● 상품 검출된 영역에 대한 정보 영역 합치기 및 협력사에서 원하는 좌표로 변경 기능 개발 및 커뮤니케이션</p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -301,7 +329,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
 
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">GS25 매장 <br>모니터링 웹페이지</p>
                         <p class="font-size-10">2021.08~2021.08(1개월)</p>  
@@ -312,7 +340,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p>● Lead 개발자로서 동료 직원들에 개발 과정 코칭 및 업무 분담</p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -327,7 +355,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
 
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">OZO Protect <br>(구 CottonCare)</p>
                         <p class="font-size-10">2019.10~2020.06(9개월)</p>   
@@ -341,7 +369,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p>● AI 박람회 시연용 서버 배포 및 관리</p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -355,7 +383,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
 
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">RTMES <br>(생산관리시스템)</p>
                         <p class="font-size-10">2021.02~2021.04(3개월)</p>   
@@ -366,7 +394,7 @@ https://templatemo.com/tm-536-dream-pulse
 
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -379,7 +407,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
 
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">OZO Protect Raspberry pi 연동</p>
                         <p class="font-size-10">2021.01~2021.02(2개월)</p>  
@@ -389,7 +417,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p></p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -402,7 +430,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
 
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">Merck <br>(제약회사 사내 솔루션)</p>
                         <p class="font-size-10">2020.11~2021.02(4개월)</p>   
@@ -414,7 +442,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p>● 지속적인 유지보수 및 라이브 배포</p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -428,7 +456,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
 
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">AirShuttle</p>
                         <p class="font-size-10">2020.10~2020.10(1개월)</p>   
@@ -438,7 +466,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p>● UI 업데이트로 인한 Front 수정</p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -450,7 +478,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
      
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">PAPABU APP <br>유지보수</p>
                         <p class="font-size-10">2020.03~2021.04(1년 2개월)</p>  
@@ -460,7 +488,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p>● 팝업 화면 수정 및 고도화 작업으로 인한 로직 변경 </p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -473,7 +501,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
      
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">RACS <br>(결품감지 솔루션 시연용)</p>
                         <p class="font-size-10">2020.06~2020.10(5개월)</p>  
@@ -484,7 +512,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p>● AI 박람회 시연용 서버 배포 및 관리</p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -498,7 +526,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
      
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">Triplet 홈페이지 리뉴얼</p>
                         <p class="font-size-10">2020.03~2020.05(3개월)</p>  
@@ -509,7 +537,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p>● 로컬 및 라이브 서버 배포 </p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
@@ -522,7 +550,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </div>
    
                   <div class="dis-flex border-bottom-1" style="flex-direction: column;">
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">Starmate & Requbliq</p>
                         <p class="font-size-10">2019.06~2019.12(7개월)</p>  
@@ -532,7 +560,7 @@ https://templatemo.com/tm-536-dream-pulse
                         <p>● 카카오 map api, 신규 건물 등록, 임대 건물 상세 페이지 등 기존 추가 개발 진행, 발생 이슈 대응 </p>
                       </div>
                     </div>  
-                    <div class="dis-flex">
+                    <div class="dis-flex mulit-direction">
                       <div class="width-15">
                         <p class="mb-0">개발 환경</p>
                       </div>
